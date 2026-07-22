@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kisha Lip Gloss — Luxury Lip Essentials | Kampala, Uganda</title>
+  <meta name="description" content="Discover Kisha Lip Gloss — Kampala's #1 luxury lip essentials. Non-sticky, ultra-hydrating glosses, lip oils, and scrubs for modern women.">
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- CUSTOM FEMININE CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> FREE EXPRESS DELIVERY IN KAMPALA ON ORDERS OVER UGX 60,000</span>
+    <span>✦</span>
+    <span><i class="fab fa-whatsapp"></i> WHATSAPP US DIRECTLY: <strong>+256 700 525 113</strong></span>
+  </div>
+
+  <!-- GLASSNAVBAR -->
+  <nav class="navbar">
+    <a href="#home" class="nav-brand">
+      <div class="logo-text">
+        kisha
+        <span>lip gloss</span>
+      </div>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#trending" class="nav-link">Trending</a></li>
+      <li><a href="#tester" class="nav-link">Shade Tester</a></li>
+      <li><a href="#collection" class="nav-link">Collection</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a href="#lookbook" class="nav-link">Lookbook</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="btn-icon" id="quiz-start-btn" title="Find My Shade Quiz">
+        <i class="fas fa-magic"></i>
+      </button>
+      <button class="btn-icon" id="cart-toggle-btn" title="Shopping Bag">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <a href="https://wa.me/256700525113" class="btn-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i> Order Now
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL SECTION -->
+  <section class="hero-section" id="home">
+    <div class="hero-slider">
+      
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <img src="assets/images/kisha_01.jpg" alt="Kisha Lip Gloss Model" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-crown"></i> High-Shine Luxury</span>
+          <h1 class="hero-title">Get glossed <em>Get noticed</em></h1>
+          <p class="hero-desc">Elevate your everyday look with Kampala’s premier non-sticky, ultra-hydrating lip glosses designed for the modern queen.</p>
+          <div class="hero-buttons">
+            <a href="#collection" class="btn-cta">Shop Collection <i class="fas fa-arrow-right"></i></a>
+            <a href="#tester" class="btn-secondary">Try Shade Tester</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="assets/images/kisha_02.jpg" alt="Lip Gloss Texture" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-sparkles"></i> 100% Non-Sticky</span>
+          <h1 class="hero-title">Glass-like shine <em>Zero stickiness</em></h1>
+          <p class="hero-desc">Formulated with hyaluronic moisture locks and vitamin oils that keep your lips juicy, plump, and flawless all day long.</p>
+          <div class="hero-buttons">
+            <a href="#collection" class="btn-cta">Explore Oils & Glosses <i class="fas fa-arrow-right"></i></a>
+            <a href="https://wa.me/256700525113" class="btn-secondary" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="assets/images/kisha_03.jpg" alt="Luxury Packaging" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-gem"></i> Tailored Beauty</span>
+          <h1 class="hero-title">Hydrating oils <em>& Velvet tints</em></h1>
+          <p class="hero-desc">From crystal clear coats to rich velvet nude tints, discover shades carefully crafted to complement melanin-rich skin tones.</p>
+          <div class="hero-buttons">
+            <a href="#collection" class="btn-cta">View Best Sellers <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-secondary" onclick="document.getElementById('quiz-start-btn').click()">Take Shade Quiz</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <img src="assets/images/kisha_04.jpg" alt="Kisha Beauty Model" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-heart"></i> Crafted with Love</span>
+          <h1 class="hero-title">Kampala's #1 <em>Lip Essential</em></h1>
+          <p class="hero-desc">Join thousands of happy girls across Uganda glowing with confidence. Fast delivery straight to your doorstep.</p>
+          <div class="hero-buttons">
+            <a href="https://wa.me/256700525113" class="btn-cta" target="_blank">Order via WhatsApp <i class="fab fa-whatsapp"></i></a>
+            <a href="#lookbook" class="btn-secondary">View Girl Squad</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CAROUSEL CONTROLS -->
+    <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+
+    <div class="slider-dots"></div>
+  </section>
+
+  <!-- DYNAMIC MARQUEE TAGLINE BELT SLIDER -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <div class="marquee-item"><span>✦</span> NON-STICKY VELVET SHINE</div>
+        <div class="marquee-item"><i class="fas fa-heart"></i> 100% CRUELTY FREE</div>
+        <div class="marquee-item"><span>✦</span> HYALURONIC MOISTURE LOCK</div>
+        <div class="marquee-item"><i class="fas fa-star"></i> KAMPALA'S #1 LIP ESSENTIAL</div>
+        <div class="marquee-item"><span>✦</span> ULTRA GLOSSY GLOW</div>
+        <div class="marquee-item"><i class="fas fa-gem"></i> LUXURY TINTS FOR QUEENS</div>
+      </div>
+      <div class="marquee-content">
+        <div class="marquee-item"><span>✦</span> NON-STICKY VELVET SHINE</div>
+        <div class="marquee-item"><i class="fas fa-heart"></i> 100% CRUELTY FREE</div>
+        <div class="marquee-item"><span>✦</span> HYALURONIC MOISTURE LOCK</div>
+        <div class="marquee-item"><i class="fas fa-star"></i> KAMPALA'S #1 LIP ESSENTIAL</div>
+        <div class="marquee-item"><span>✦</span> ULTRA GLOSSY GLOW</div>
+        <div class="marquee-item"><i class="fas fa-gem"></i> LUXURY TINTS FOR QUEENS</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRENDING BESTSELLERS SECTION -->
+  <section class="featured-section" id="trending">
+    <div class="section-header">
+      <span class="section-subtitle">Trending Beauty</span>
+      <h2 class="section-title">Most Loved <em>Shades</em></h2>
+    </div>
+
+    <div class="carousel-container">
+      <div class="cards-track" id="trending-cards-track">
+        
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="card-img-wrap">
+            <span class="card-badge">Bestseller</span>
+            <button class="card-wishlist" onclick="toggleWishlist(1, this)"><i class="far fa-heart"></i></button>
+            <img src="assets/images/kisha_05.jpg" alt="Signature Crystal Clear Gloss">
+            <button class="quick-view-btn" onclick="openQuickView(1)"><i class="far fa-eye"></i> Quick View</button>
+          </div>
+          <div class="card-content">
+            <span class="card-category">Lip Gloss</span>
+            <h4 class="card-title">Signature Crystal Clear</h4>
+            <div class="card-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(142)</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">UGX 30,000</span>
+              <button class="btn-add-cart" onclick="addToCart(1)"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="card-img-wrap">
+            <span class="card-badge">Trending</span>
+            <button class="card-wishlist" onclick="toggleWishlist(2, this)"><i class="far fa-heart"></i></button>
+            <img src="assets/images/kisha_06.jpg" alt="Rose Velvet Hydration Gloss">
+            <button class="quick-view-btn" onclick="openQuickView(2)"><i class="far fa-eye"></i> Quick View</button>
+          </div>
+          <div class="card-content">
+            <span class="card-category">Lip Gloss</span>
+            <h4 class="card-title">Rose Velvet Tint</h4>
+            <div class="card-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(98)</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">UGX 30,000</span>
+              <button class="btn-add-cart" onclick="addToCart(2)"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="card-img-wrap">
+            <span class="card-badge">New</span>
+            <button class="card-wishlist" onclick="toggleWishlist(3, this)"><i class="far fa-heart"></i></button>
+            <img src="assets/images/kisha_07.jpg" alt="Honey Nude Lip Oil">
+            <button class="quick-view-btn" onclick="openQuickView(3)"><i class="far fa-eye"></i> Quick View</button>
+          </div>
+          <div class="card-content">
+            <span class="card-category">Lip Oil</span>
+            <h4 class="card-title">Honey Nude Lip Oil</h4>
+            <div class="card-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(64)</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">UGX 35,000</span>
+              <button class="btn-add-cart" onclick="addToCart(3)"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <div class="card-img-wrap">
+            <span class="card-badge">Hot</span>
+            <button class="card-wishlist" onclick="toggleWishlist(4, this)"><i class="far fa-heart"></i></button>
+            <img src="assets/images/kisha_08.jpg" alt="Berry Crush Plumping Gloss">
+            <button class="quick-view-btn" onclick="openQuickView(4)"><i class="far fa-eye"></i> Quick View</button>
+          </div>
+          <div class="card-content">
+            <span class="card-category">Lip Gloss</span>
+            <h4 class="card-title">Berry Crush Plump</h4>
+            <div class="card-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <span>(112)</span>
+            </div>
+            <div class="card-footer">
+              <span class="card-price">UGX 30,000</span>
+              <button class="btn-add-cart" onclick="addToCart(4)"><i class="fas fa-shopping-bag"></i> Add</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SHADE TESTER SIMULATOR -->
+  <section class="shade-tester-section" id="tester">
+    <div class="section-header">
+      <span class="section-subtitle">Interactive Studio</span>
+      <h2 class="section-title">Try Your <em>Perfect Shade</em></h2>
+    </div>
+
+    <div class="tester-grid">
+      <div class="tester-visual">
+        <img src="assets/images/kisha_06.jpg" id="tester-img" alt="Lip Shade Preview">
+        <div class="tester-lip-overlay">
+          <div class="tester-info">
+            <h3 id="tester-title">Rose Velvet Tint</h3>
+            <p id="tester-desc">Soft romantic pink hue with non-sticky glass sheen.</p>
+          </div>
+          <button class="btn-cta" id="tester-add-btn" style="padding: 10px 20px; font-size: 0.85rem;">
+            Add Shade <i class="fas fa-shopping-bag"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="shade-picker-box">
+        <h4>Select a shade to preview live:</h4>
+        <div class="shade-options">
+          
+          <div class="shade-option-card active" data-shade="rose">
+            <div class="shade-circle" style="background: #D81B60;"></div>
+            <div class="shade-details">
+              <h5>Rose Velvet Tint</h5>
+              <span>Rich Blush Pink &amp; High Shine</span>
+            </div>
+          </div>
+
+          <div class="shade-option-card" data-shade="honey">
+            <div class="shade-circle" style="background: #D4AF37;"></div>
+            <div class="shade-details">
+              <h5>Honey Nude Glow</h5>
+              <span>Warm Golden Moisture Oil</span>
+            </div>
+          </div>
+
+          <div class="shade-option-card" data-shade="berry">
+            <div class="shade-circle" style="background: #880E4F;"></div>
+            <div class="shade-details">
+              <h5>Berry Crush Plump</h5>
+              <span>Deep Plum &amp; Peppermint Lift</span>
+            </div>
+          </div>
+
+          <div class="shade-option-card" data-shade="crystal">
+            <div class="shade-circle" style="background: #FFFFFF; border: 1px solid #ddd;"></div>
+            <div class="shade-details">
+              <h5>Signature Crystal Clear</h5>
+              <span>Pure Glass Sheen &amp; Vitamin E</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US / BRAND STORY SECTION -->
+  <section class="about-section" id="about">
+    <div class="about-grid">
+      <div class="about-images-wrapper">
+        <div class="about-badge">
+          <strong>100%</strong>
+          <span>LUXURY</span>
+        </div>
+        <img src="assets/images/kisha_15.jpg" class="about-img-main" alt="Kisha Lip Gloss Model">
+        <img src="assets/images/kisha_16.jpg" class="about-img-secondary" alt="Kisha Product Box">
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle">Our Passion &amp; Story</span>
+        <h2>Born in Kampala <em>Crafted for Queens</em></h2>
+        <p>At Kisha Lip Gloss, we believe every woman deserves a gloss that feels as luxurious as it looks. We formulate our products specifically to keep your lips hydrated, plump, and ultra-radiant without any uncomfortable stickiness.</p>
+        <p>Whether you're dressing up for a night out in Kampala or keeping it chic for everyday wear, Kisha is your trusted beauty companion.</p>
+        
+        <div class="about-features">
+          <div class="feature-box">
+            <i class="fas fa-sparkles"></i>
+            <h4>Non-Sticky Formula</h4>
+            <p>Weightless texture that glides like butter.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-droplet"></i>
+            <h4>Deep Hydration</h4>
+            <p>Infused with Vitamin E &amp; Jojoba oil.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-heart"></i>
+            <h4>Cruelty-Free</h4>
+            <p>100% ethically sourced ingredients.</p>
+          </div>
+          <div class="feature-box">
+            <i class="fas fa-truck-fast"></i>
+            <h4>Kampala Express</h4>
+            <p>Same-day doorstep delivery available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL PRODUCTS CATALOG SECTION -->
+  <section class="catalog-section" id="collection">
+    <div class="section-header">
+      <span class="section-subtitle">Our Full Lineup</span>
+      <h2 class="section-title">The Complete <em>Collection</em></h2>
+    </div>
+
+    <!-- CATEGORY FILTER TABS -->
+    <div class="category-tabs">
+      <button class="tab-btn active" data-filter="all">All Products</button>
+      <button class="tab-btn" data-filter="glosses">Lip Glosses</button>
+      <button class="tab-btn" data-filter="oils">Lip Oils</button>
+      <button class="tab-btn" data-filter="scrubs">Scrubs &amp; Care</button>
+      <button class="tab-btn" data-filter="sets">Gift Sets &amp; Bundles</button>
+    </div>
+
+    <!-- CATALOG GRID (POPUATED BY JS) -->
+    <div class="catalog-grid" id="catalog-grid"></div>
+  </section>
+
+  <!-- INTERACTIVE BEAUTY QUIZ BANNER -->
+  <div class="quiz-banner">
+    <div class="quiz-content">
+      <h3>Not sure which shade matches your vibe?</h3>
+      <p>Take our quick 30-second Beauty Quiz and let us find your signature lip gloss!</p>
+    </div>
+    <button class="btn-gold" onclick="document.getElementById('quiz-start-btn').click()">
+      <i class="fas fa-magic"></i> Start Shade Quiz
+    </button>
+  </div>
+
+  <!-- LOOKBOOK & INSTAGRAM SQUAD GALLERY -->
+  <section class="gallery-section" id="lookbook">
+    <div class="section-header">
+      <span class="section-subtitle">#KishaGlossGirl</span>
+      <h2 class="section-title">Girl Squad <em>Lookbook</em></h2>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/images/kisha_15.jpg" alt="Squad Model 1">
+        <div class="gallery-overlay">
+          <button class="gallery-btn" onclick="openLightbox('assets/images/kisha_15.jpg')"><i class="fas fa-expand"></i></button>
+          <span><i class="fas fa-heart"></i> 1.2k Likes</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kisha_16.jpg" alt="Squad Model 2">
+        <div class="gallery-overlay">
+          <button class="gallery-btn" onclick="openLightbox('assets/images/kisha_16.jpg')"><i class="fas fa-expand"></i></button>
+          <span><i class="fas fa-heart"></i> 940 Likes</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kisha_17.jpg" alt="Squad Model 3">
+        <div class="gallery-overlay">
+          <button class="gallery-btn" onclick="openLightbox('assets/images/kisha_17.jpg')"><i class="fas fa-expand"></i></button>
+          <span><i class="fas fa-heart"></i> 1.8k Likes</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/images/kisha_18.jpg" alt="Squad Model 4">
+        <div class="gallery-overlay">
+          <button class="gallery-btn" onclick="openLightbox('assets/images/kisha_18.jpg')"><i class="fas fa-expand"></i></button>
+          <span><i class="fas fa-heart"></i> 2.1k Likes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER REVIEWS CAROUSEL -->
+  <section class="reviews-section">
+    <div class="section-header">
+      <span class="section-subtitle">Real Feedback</span>
+      <h2 class="section-title">Loved by <em>Ugandan Queens</em></h2>
+    </div>
+
+    <div class="reviews-carousel">
+      <div class="review-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p class="review-quote">"The shine is absolutely unreal! I was so tired of lip glosses that leave your hair sticking to your lips, but Kisha glosses are so smooth and moisturising. Plus, WhatsApp delivery in Kampala was super fast!"</p>
+      <div class="review-author">
+        <img src="assets/images/kisha_17.jpg" class="author-avatar" alt="Reviewer Sarah">
+        <div class="author-info">
+          <h5>Sarah K.</h5>
+          <span>Kampala, Verified Buyer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          kisha <span>lip gloss</span>
+        </div>
+        <p>Kampala’s favorite luxury lip essential brand. Delivering mirror shine, deep hydration, and pure confidence to modern women across Uganda.</p>
+        <div class="social-links">
+          <a href="https://wa.me/256700525113" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul class="footer-links">
+          <li><a href="#collection">Lip Glosses</a></li>
+          <li><a href="#collection">Hydrating Oils</a></li>
+          <li><a href="#collection">Sugar Scrubs</a></li>
+          <li><a href="#collection">Gift Bundles</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Kisha</a></li>
+          <li><a href="#tester">Shade Tester</a></li>
+          <li><a href="#lookbook">Lookbook</a></li>
+          <li><a href="https://wa.me/256700525113">WhatsApp Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay Glowing</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 12px; color: #DDA8B8;">Subscribe for exclusive shade launches &amp; secret discounts!</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn-cta" style="width: 100%; justify-content: center;">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Kisha Lip Gloss Uganda. All rights reserved.</p>
+      <p>Crafted with 💕 for Kampala Queens</p>
+    </div>
+  </footer>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Shopping Bag 💕</h3>
+        <button class="cart-close-btn" id="cart-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="cart-body" id="cart-body"></div>
+
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Subtotal:</span>
+          <span id="cart-total-amount">UGX 0</span>
+        </div>
+        <button class="btn-cta" id="whatsapp-checkout-btn" style="width: 100%; justify-content: center; font-size: 1rem; padding: 16px;">
+          <i class="fab fa-whatsapp"></i> Order via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK VIEW & LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast-notification" id="toast-notification">
+    <i class="fas fa-check-circle" style="color: var(--clr-gold);"></i>
+    <span id="toast-message">Item added to bag!</span>
+  </div>
+
+  <!-- JAVASCRIPT ENGINE -->
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,196 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>kisha lip gloss — v9 Official</title>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
-:root {
-  --rose: #c2185b;
-  --hot: #f06292;
-  --blush: #fff5f8;
-  --white: #ffffff;
-  --text: #1a0a12;
-  --muted: #6b525d;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-
-/* THE LADY PINK CURSOR STYLE */
-body { 
-  font-family: 'DM Sans', sans-serif; 
-  background: var(--white); 
-  color: var(--text); 
-  line-height: 1.6; 
-  overflow-x: hidden;
-  cursor: none; 
-}
-
-.cursor-dot {
-  width: 8px; height: 8px; background: var(--rose);
-  position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999;
-  transform: translate(-50%, -50%);
-}
-.cursor-outline {
-  width: 30px; height: 30px; border: 2px solid var(--rose);
-  position: fixed; border-radius: 50%; pointer-events: none; z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: all 0.15s ease-out;
-}
-
-/* NAVIGATION */
-nav {
-  position: fixed; top: 0; width: 100%; z-index: 1000;
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 15px 8%; background: rgba(255,255,255,0.98);
-  border-bottom: 1px solid #eee;
-}
-
-/* FACEBOOK STYLE LOGO */
-.logo { 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-  font-size: 2rem; 
-  font-weight: 800; 
-  letter-spacing: -1.5px; 
-  text-transform: lowercase; 
-}
-.logo span { color: var(--rose); }
-
-/* HERO */
-.hero { height: 90vh; display: flex; align-items: center; padding: 0 8%; background: var(--blush); margin-top: 70px; }
-.hero-content { flex: 1; padding-right: 50px; }
-.hero-content h1 { font-family: 'Bodoni Moda', serif; font-size: 5rem; line-height: 1; }
-.hero-img { flex: 1; height: 80%; border-radius: 20px; overflow: hidden; box-shadow: 20px 20px 0 var(--rose); }
-.hero-img img { width: 100%; height: 100%; object-fit: cover; }
-
-/* SLIM PINK BELT */
-.pink-belt {
-  background: var(--rose); color: white; padding: 10px 0;
-  white-space: nowrap; overflow: hidden; display: flex;
-}
-.belt-content { display: flex; animation: scroll 25s linear infinite; }
-.belt-content span { font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 700; padding: 0 40px; }
-@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-/* ABOUT SECTION */
-.about { padding: 100px 8%; background: var(--blush); display: flex; align-items: center; gap: 60px; }
-.about-img { flex: 1; border-radius: 20px; overflow: hidden; height: 500px; }
-.about-img img { width: 100%; height: 100%; object-fit: cover; }
-.about-text { flex: 1; }
-
-/* COLLECTION */
-.collection { padding: 100px 8%; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.card { background: white; border-radius: 15px; overflow: hidden; border: 1px solid #f0f0f0; text-align: center; padding-bottom: 20px; }
-.card img { width: 100%; height: 350px; object-fit: cover; }
-
-/* CONTACT */
-.contact { padding: 100px 8%; text-align: center; }
-.contact-form { max-width: 600px; margin: 40px auto; text-align: left; }
-.contact-form input { width: 100%; padding: 15px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; }
-
-.btn { background: var(--rose); color: white; padding: 18px 40px; text-decoration: none; border-radius: 50px; font-weight: 700; display: inline-block; cursor: none; }
-
-/* SOCIAL ICONS */
-.social-icons { margin-top: 20px; display: flex; justify-content: center; gap: 20px; }
-.social-icons a { color: white; font-size: 1.5rem; transition: 0.3s; }
-.social-icons a:hover { color: var(--hot); }
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kisha Lip Gloss — Luxury Lip Essentials | Kampala, Uganda</title>
+  <meta name="description" content="Discover Kisha Lip Gloss — Kampala's #1 luxury lip essentials. Non-sticky, ultra-hydrating glosses, lip oils, and scrubs for modern women.">
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- CUSTOM STYLES -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    /* Adjust relative asset paths for african-simba folder */
+    .hero-slide:nth-child(1) .hero-slide-bg { content: url('../assets/images/kisha_01.jpg'); }
+    .hero-slide:nth-child(2) .hero-slide-bg { content: url('../assets/images/kisha_02.jpg'); }
+    .hero-slide:nth-child(3) .hero-slide-bg { content: url('../assets/images/kisha_03.jpg'); }
+    .hero-slide:nth-child(4) .hero-slide-bg { content: url('../assets/images/kisha_04.jpg'); }
+  </style>
 </head>
 <body>
 
-<div class="cursor-dot"></div>
-<div class="cursor-outline"></div>
+  <!-- CUSTOM FEMININE CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
 
-<nav>
-  <div class="logo">kisha <span>lip gloss</span></div>
-  <ul style="display: flex; gap: 30px; list-style: none;">
-    <li><a href="#home" style="text-decoration:none; color:black; font-weight:bold;">Home</a></li>
-    <li><a href="#about" style="text-decoration:none; color:black; font-weight:bold;">About</a></li>
-    <li><a href="#contact" style="text-decoration:none; color:black; font-weight:bold;">Contact</a></li>
-  </ul>
-  <a href="https://wa.me/256700525113" class="btn" style="padding: 10px 25px; font-size: 0.8rem;">Chat Now</a>
-</nav>
-
-<section class="hero" id="home">
-  <div class="hero-content">
-    <p style="text-transform: uppercase; letter-spacing: 4px; color: var(--rose); font-weight: 700;">Luxury Reimagined</p>
-    <h1>Get glossed <em>Get noticed</em></h1>
-    <p style="margin: 20px 0;">Premium lip essentials for the modern woman.</p>
-    <a href="https://wa.me/256700525113" class="btn">Order via WhatsApp</a>
+  <!-- TOP ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    <span><i class="fas fa-sparkles"></i> FREE EXPRESS DELIVERY IN KAMPALA ON ORDERS OVER UGX 60,000</span>
+    <span>✦</span>
+    <span><i class="fab fa-whatsapp"></i> WHATSAPP US DIRECTLY: <strong>+256 700 525 113</strong></span>
   </div>
-  <div class="hero-img">
-    <img src="IMG-20260415-WA0005.jpg">
+
+  <!-- GLASSNAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="nav-brand">
+      <div class="logo-text">
+        kisha
+        <span>lip gloss</span>
+      </div>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="../index.html#home" class="nav-link active">Home</a></li>
+      <li><a href="../index.html#trending" class="nav-link">Trending</a></li>
+      <li><a href="../index.html#tester" class="nav-link">Shade Tester</a></li>
+      <li><a href="../index.html#collection" class="nav-link">Collection</a></li>
+      <li><a href="../index.html#about" class="nav-link">About Us</a></li>
+      <li><a href="../index.html#lookbook" class="nav-link">Lookbook</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="btn-icon" id="quiz-start-btn" title="Find My Shade Quiz">
+        <i class="fas fa-magic"></i>
+      </button>
+      <button class="btn-icon" id="cart-toggle-btn" title="Shopping Bag">
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <a href="https://wa.me/256700525113" class="btn-cta" target="_blank">
+        <i class="fab fa-whatsapp"></i> Order Now
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO CAROUSEL SECTION -->
+  <section class="hero-section" id="home">
+    <div class="hero-slider">
+      
+      <!-- Slide 1 -->
+      <div class="hero-slide active">
+        <img src="../assets/images/kisha_01.jpg" alt="Kisha Lip Gloss Model" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-crown"></i> High-Shine Luxury</span>
+          <h1 class="hero-title">Get glossed <em>Get noticed</em></h1>
+          <p class="hero-desc">Elevate your everyday look with Kampala’s premier non-sticky, ultra-hydrating lip glosses designed for the modern queen.</p>
+          <div class="hero-buttons">
+            <a href="../index.html#collection" class="btn-cta">Shop Collection <i class="fas fa-arrow-right"></i></a>
+            <a href="../index.html#tester" class="btn-secondary">Try Shade Tester</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide">
+        <img src="../assets/images/kisha_02.jpg" alt="Lip Gloss Texture" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-sparkles"></i> 100% Non-Sticky</span>
+          <h1 class="hero-title">Glass-like shine <em>Zero stickiness</em></h1>
+          <p class="hero-desc">Formulated with hyaluronic moisture locks and vitamin oils that keep your lips juicy, plump, and flawless all day long.</p>
+          <div class="hero-buttons">
+            <a href="../index.html#collection" class="btn-cta">Explore Oils &amp; Glosses <i class="fas fa-arrow-right"></i></a>
+            <a href="https://wa.me/256700525113" class="btn-secondary" target="_blank">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide">
+        <img src="../assets/images/kisha_03.jpg" alt="Luxury Packaging" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-gem"></i> Tailored Beauty</span>
+          <h1 class="hero-title">Hydrating oils <em>&amp; Velvet tints</em></h1>
+          <p class="hero-desc">From crystal clear coats to rich velvet nude tints, discover shades carefully crafted to complement melanin-rich skin tones.</p>
+          <div class="hero-buttons">
+            <a href="../index.html#collection" class="btn-cta">View Best Sellers <i class="fas fa-arrow-right"></i></a>
+            <button class="btn-secondary" onclick="document.getElementById('quiz-start-btn').click()">Take Shade Quiz</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="hero-slide">
+        <img src="../assets/images/kisha_04.jpg" alt="Kisha Beauty Model" class="hero-slide-bg">
+        <div class="hero-content">
+          <span class="hero-tag"><i class="fas fa-heart"></i> Crafted with Love</span>
+          <h1 class="hero-title">Kampala's #1 <em>Lip Essential</em></h1>
+          <p class="hero-desc">Join thousands of happy girls across Uganda glowing with confidence. Fast delivery straight to your doorstep.</p>
+          <div class="hero-buttons">
+            <a href="https://wa.me/256700525113" class="btn-cta" target="_blank">Order via WhatsApp <i class="fab fa-whatsapp"></i></a>
+            <a href="../index.html#lookbook" class="btn-secondary">View Girl Squad</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CAROUSEL CONTROLS -->
+    <button class="slider-arrow prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="slider-arrow next"><i class="fas fa-chevron-right"></i></button>
+    <div class="slider-dots"></div>
+  </section>
+
+  <!-- MARQUEE BELT -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <div class="marquee-item"><span>✦</span> NON-STICKY VELVET SHINE</div>
+        <div class="marquee-item"><i class="fas fa-heart"></i> 100% CRUELTY FREE</div>
+        <div class="marquee-item"><span>✦</span> HYALURONIC MOISTURE LOCK</div>
+        <div class="marquee-item"><i class="fas fa-star"></i> KAMPALA'S #1 LIP ESSENTIAL</div>
+        <div class="marquee-item"><span>✦</span> ULTRA GLOSSY GLOW</div>
+        <div class="marquee-item"><i class="fas fa-gem"></i> LUXURY TINTS FOR QUEENS</div>
+      </div>
+      <div class="marquee-content">
+        <div class="marquee-item"><span>✦</span> NON-STICKY VELVET SHINE</div>
+        <div class="marquee-item"><i class="fas fa-heart"></i> 100% CRUELTY FREE</div>
+        <div class="marquee-item"><span>✦</span> HYALURONIC MOISTURE LOCK</div>
+        <div class="marquee-item"><i class="fas fa-star"></i> KAMPALA'S #1 LIP ESSENTIAL</div>
+        <div class="marquee-item"><span>✦</span> ULTRA GLOSSY GLOW</div>
+        <div class="marquee-item"><i class="fas fa-gem"></i> LUXURY TINTS FOR QUEENS</div>
+      </div>
+    </div>
   </div>
-</section>
 
-<div class="pink-belt">
-  <div class="belt-content">
-    <span>We offer: Lip Gloss</span><span>✦</span>
-    <span>Lip Scrub</span><span>✦</span>
-    <span>Lip Masks</span><span>✦</span>
-    <span>Lip Brushes</span><span>✦</span>
-    <span>Face Sponges</span><span>✦</span>
-    <span>We offer: Lip Gloss</span><span>✦</span>
-    <span>Lip Scrub</span><span>✦</span>
-    <span>Lip Masks</span><span>✦</span>
-    <span>Lip Brushes</span><span>✦</span>
-    <span>Face Sponges</span><span>✦</span>
+  <!-- ABOUT US -->
+  <section class="about-section" id="about">
+    <div class="about-grid">
+      <div class="about-images-wrapper">
+        <div class="about-badge">
+          <strong>100%</strong>
+          <span>LUXURY</span>
+        </div>
+        <img src="../assets/images/kisha_15.jpg" class="about-img-main" alt="Kisha Lip Gloss Model">
+        <img src="../assets/images/kisha_16.jpg" class="about-img-secondary" alt="Kisha Product Box">
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle">Our Passion &amp; Story</span>
+        <h2>Born in Kampala <em>Crafted for Queens</em></h2>
+        <p>At Kisha Lip Gloss, we believe every woman deserves a gloss that feels as luxurious as it looks. We formulate our products specifically to keep your lips hydrated, plump, and ultra-radiant without any uncomfortable stickiness.</p>
+        <p>Whether you're dressing up for a night out in Kampala or keeping it chic for everyday wear, Kisha is your trusted beauty companion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-bottom">
+      <p>© 2026 Kisha Lip Gloss Uganda. All rights reserved.</p>
+      <p><a href="../index.html" style="color:var(--clr-gold); font-weight:bold;">Return to Main Website</a></p>
+    </div>
+  </footer>
+
+  <!-- SHOPPING CART DRAWER -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3>Shopping Bag 💕</h3>
+        <button class="cart-close-btn" id="cart-close-btn"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="cart-body" id="cart-body"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Subtotal:</span>
+          <span id="cart-total-amount">UGX 0</span>
+        </div>
+        <button class="btn-cta" id="whatsapp-checkout-btn" style="width: 100%; justify-content: center;">
+          <i class="fab fa-whatsapp"></i> Order via WhatsApp
+        </button>
+      </div>
+    </div>
   </div>
-</div>
 
-<section class="about" id="about">
-  <div class="about-img"><img src="IMG-20260415-WA0006.jpg"></div>
-  <div class="about-text">
-    <h2 style="font-family:'Bodoni Moda'; font-size:3rem;">About <em>Kisha</em></h2>
-    <p>We believe every woman deserves a gloss that lasts as long as her ambition. Based in Kampala, we craft luxury for your lips.</p>
+  <div class="toast-notification" id="toast-notification">
+    <i class="fas fa-check-circle" style="color: var(--clr-gold);"></i>
+    <span id="toast-message">Item added to bag!</span>
   </div>
-</section>
 
-<section class="collection">
-  <div class="grid">
-    <div class="card"><img src="IMG-20260415-WA0001.jpg"><div class="card-body"><h3>Signature Velvet</h3><p>30,000 sh</p></div></div>
-    <div class="card"><img src="IMG-20260415-WA0002.jpg"><div class="card-body"><h3>Duo Collection</h3><p>30,000 sh</p></div></div>
-    <div class="card"><img src="IMG-20260415-WA0003(1).jpg"><div class="card-body"><h3>The Luxury Box</h3><p>30,000 sh</p></div></div>
-  </div>
-</section>
-
-<section class="contact" id="contact">
-  <h2 style="font-family:'Bodoni Moda'; font-size:3rem;">Contact Us</h2>
-  <div class="contact-form">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <button class="btn" style="width:100%;">Send Message</button>
-  </div>
-  <p>Direct Chat: <strong>+256 700 525 113</strong></p>
-</section>
-
-<footer style="padding:60px 8%; background:#111; color:white; text-align:center;">
-  <div class="logo" style="margin-bottom:10px;">kisha <span style="color:var(--rose);">lip gloss</span></div>
-  <p>© 2026 Kisha lip gloss UGANDA</p>
-  
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-tiktok"></i></a>
-    <a href="https://wa.me/256700525113"><i class="fab fa-whatsapp"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-  </div>
-</footer>
-
-<script>
-  const dot = document.querySelector('.cursor-dot');
-  const outline = document.querySelector('.cursor-outline');
-  
-  window.addEventListener('mousemove', (e) => {
-    dot.style.top = e.clientY + 'px';
-    dot.style.left = e.clientX + 'px';
-    outline.style.top = e.clientY + 'px';
-    outline.style.left = e.clientX + 'px';
-  });
-</script>
-
+  <script src="../js/app.js"></script>
 </body>
 </html>
